@@ -113,24 +113,24 @@ INSERT INTO Employees (name, position) VALUES
 
 III. Създаване на обектноориентиран модел на базата данни и конзолно приложение
 
-    1. Създайте конзолен проект във Visual Studio.
+1. Създайте конзолен проект във Visual Studio.
+
+2. Инсталирайте NuGet пакетите:
+
+    ◦ Microsoft.EntityFrameworkCore
     
-    2. Инсталирайте NuGet пакетите:
+    ◦ Microsoft.EntityFrameworkCore.SqlServer
     
-        ◦ Microsoft.EntityFrameworkCore
-        
-        ◦ Microsoft.EntityFrameworkCore.SqlServer
-        
-        ◦ Microsoft.EntityFrameworkCore.Tools
-        
-    3. От меню Tools → NuGet Package Manager → Package Manager Console, отворете конзолата.
+    ◦ Microsoft.EntityFrameworkCore.Tools
     
-    4. Изпълнете командата:
-    
-       Scaffold-DbContext 'Data Source=YOUR_SERVER;Initial Catalog=ConstructionMaterialsDB;Integrated Security=True;Encrypt=False' Microsoft.EntityFrameworkCore.SqlServer -o Data\Models
-       
-    5. Разгледайте съдържанието на папката Data\Models.
-    
-    6. Създайте конзолно приложение, което управлява CRUD операции за продуктите, поръчките и клиентите.
-    
-    7. (По желание) Конзолното приложение трябва да поддържа функция с автоматично довършване по име на търсения обект с натискане на бутона TAB. Например при работа с таблица “Products” при въвеждане на стринг “Бя” и натоскане на бутон TAB трябва да ни бъде допълнено наименованието “Бяла боя”
+3. От меню Tools → NuGet Package Manager → Package Manager Console, отворете конзолата.
+
+4. Изпълнете командата:
+
+   Scaffold-DbContext 'Data Source=YOUR_SERVER;Initial Catalog=ConstructionMaterialsDB;Integrated Security=True;Encrypt=False' Microsoft.EntityFrameworkCore.SqlServer -o Data\Models
+   
+5. Разгледайте съдържанието на папката Data\Models.
+
+6. Създайте конзолно приложение, което управлява CRUD операции за продуктите, поръчките и клиентите.
+
+7. (По желание) Конзолното приложение трябва да поддържа функция с автоматично довършване по име на търсения обект с натискане на бутона TAB. Например при работа с таблица “Products” при въвеждане на стринг “Бя” и натоскане на бутон TAB трябва да ни бъде допълнено наименованието “Бяла боя”
